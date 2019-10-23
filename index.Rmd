@@ -6,8 +6,8 @@ output:
     toc_float: true
 ---
 
-# This is Jeff's awesome website
+# This is Jason Wang's awesome website
 
-if you want to know me , please click [here](about.html) to know more!!!
+if you want to know me, please click [here](about.html) to know more!!!
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
