@@ -11,4 +11,4 @@ navbar:
       href: https://github.com/Jasonwang-ny/jasonj.github.io
 output:
   html_document:
-    theme: flatley
+    theme: darkly
