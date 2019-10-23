@@ -3,6 +3,7 @@ title: "plotly Example"
 output: 
   html_document:
     toc: true
+    code_folding: hide
     toc_float: true
 ---
 
@@ -20,12 +21,12 @@ library(plotly)
 ```
 
 ## Let us make some figure
-```{r}
+```{r, echo = FALSE}
 data("nyc_airbnb")
 
 ```
 
-```{r, echo = FALSE, message = FALSE, warning = FALSE}
+```{r, message = FALSE}
 
 set.seed(1)
 
@@ -44,7 +45,7 @@ nyc_airbnb =
 
 ```
 
-```{r}
+```{r, message = FALSE}
 nyc_airbnb %>%
   mutate(text_label = str_c("Price: $", price, '\nRating: ', rating)) %>% 
   plot_ly(
@@ -54,7 +55,7 @@ nyc_airbnb %>%
 ```
 
 
-```{r}
+```{r, message = FALSE}
 nyc_airbnb %>% 
   mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
   plot_ly(y = ~price, color = ~neighbourhood, type = "box",
@@ -62,7 +63,7 @@ nyc_airbnb %>%
 ```
 
 
-```{r}
+```{r, message = FALSE}
 nyc_airbnb %>% 
   count(neighbourhood) %>% 
   mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>% 
