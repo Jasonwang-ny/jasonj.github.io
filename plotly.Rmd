@@ -1,0 +1,9 @@
+---
+title: "plotly Example"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+this isjfdlkajsdjfkalks _with interactive graphics_ !!!
